@@ -24,13 +24,12 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:"uno dos tres cuatro cinco seis siete";
     align-items: center;
 }
 
 .header__menu{
     align-self: center;
-    grid-column: 1/5;
+    grid-column: 1/6;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -106,6 +105,19 @@ body{
     height: 300px;
 }
 
+.maini__texto{
+    font-size: x-large;
+    font-weight: 650;
+}
+
+.maini__textodos{
+    font-size: large;
+    font-weight: 600;
+}
+
+.maini__section1{
+    margin: auto;
+}
 
 
 /* comienza main nosotras */
@@ -129,12 +141,16 @@ body{
     width: 60%;
     margin: 10px;
     align-self: center;
+    font-size: 16px;
+    font-weight: 500; 
 }
 
-
-.maini__section1{
-    margin: auto;
+.mainn__section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 
 /* comienza main preparaion */
 
@@ -195,6 +211,14 @@ body{
     margin-left: 40px;
     margin-bottom: 5px;
     text-align: center;
+    font-size: x-large;
+    font-weight: 650;
+}
+
+.main__textdos{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
 }
 
 /* comienza main contacto */
@@ -320,3 +344,162 @@ body{
 a {
     text-decoration: none;
 }
+
+/* comienza media querie */
+/* tablet */
+
+@media (min-width: 541px) and (max-width: 720px){ 
+    /* 630 */
+    /* va a ir bootstrap en los primeros 4 items */
+    .header{
+        height: 96px;
+        margin-bottom: 35px;
+    }
+    .header__menu{
+        flex-direction: row-reverse;
+    }
+    .header__foto{
+        width: 87px;
+        height: 87px;
+    }
+
+/* comienza index */
+.maini__titlee{
+    font-size: 40px; 
+    font-weight: 700;
+}
+
+.maini__p{ 
+    font-size: 14px;
+    font-weight: 450; 
+}
+.maini__titulo{
+    margin-top: 35px;
+}
+.maini__foto{
+    width: 260px;
+    height: 260px;
+}
+.maini__texto{
+    font-size: larger;
+    font-weight: 570;
+}
+
+.maini__textodos{
+    font-size: medium;
+    font-weight: 525;
+}
+
+/* comienza nosotras */
+.mainn__foto{
+    width: 350px;
+    height: 350px;
+}
+
+.mainn__texto{
+    font-size: 14px;
+    font-weight: 450; 
+}
+
+/* comienza tienda */
+
+.maini__foto{
+    width: 260px;
+    height: 260px;
+}
+
+.main__text{
+    font-size: larger;
+    font-weight: 570;
+}
+
+.main__textdos{
+    font-size: medium;
+    font-weight: 525;
+}
+}
+
+/* celular */
+
+@media (min-width: 320px) and (max-width: 540px){
+    /* 430 */
+    /* va a ir bootstrap en los primeros 4 items */
+    .header{
+        height: 88px;
+        margin-bottom: 32px;
+        }
+    .header__menu{
+        flex-direction: row-reverse;
+    }
+    .header__foto{
+        width: 60px;
+        height: 60px;
+    }
+    .header__item a{
+        font-size: 10px;
+    }
+/* comienza index */
+.maini__titlee{ 
+    font-size: 35px; 
+    font-weight: 700;
+}
+
+.maini__p{ 
+    font-size: 12px;
+    font-weight: 450; 
+}
+.maini__titulo{
+    margin-top: 25px;
+}
+
+.maini__foto{
+    width: 200px;
+    height: 200px;
+}
+.maini__texto{
+    font-size: larger;
+    font-weight: 570;
+}
+
+.maini__textodos{
+    font-size: medium;
+    font-weight: 525;
+}
+/* comienza nosotras */
+.mainn__foto{
+    width: 240px;
+    height: 240px;
+    text-align: center;
+}
+
+.mainn__texto{
+    font-size: 14px;
+    font-weight: 450; 
+    text-align: center;
+}
+
+/* comienza tienda */
+
+.main__foto{
+    width: 260px;
+    height: 260px;
+}
+
+.main__text{
+    font-size: larger;
+    font-weight: 570;
+}
+
+.main__textdos{
+    font-size: medium;
+    font-weight: 525;
+}
+/* comienza carrito */
+.mainca__section{
+    height: 500px;
+}
+.mainca__titulo{
+    margin-top: 150px;
+}
+}
+
