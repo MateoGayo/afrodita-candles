@@ -55,6 +55,12 @@ body{
     text-decoration: none;
     }
 
+a:hover{
+    text-decoration: underline;
+    font-weight:bold;
+    transition: .4s;
+}
+
 .header__foto{
     width: 100px;
     height: 100px;
@@ -98,6 +104,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .maini__foto{
@@ -118,6 +125,13 @@ body{
 .maini__section1{
     margin: auto;
 }
+
+.maini__div1:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    }
 
 
 /* comienza main nosotras */
@@ -192,6 +206,13 @@ body{
 .main__div3{
     display: inline-block;
     margin: 8px;
+}
+
+.div__animacion:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    cursor: pointer;
+    color: white;
 }
 
 .main{
@@ -501,6 +522,12 @@ a {
 }
 .mainca__titulo{
     margin-top: 150px;
+}
+
+/* iniciar sesion */
+.sesion__contenido{
+    width: 350px;
+    height: 350px;
 }
 }
 
