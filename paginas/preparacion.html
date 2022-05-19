@@ -18,18 +18,39 @@
 <body>
 <!-- Comienza header -->
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__item"><a href="../index.html"><img class="header__foto" class="header__foto" src="../recursos/afrodita-candles.jpeg" alt="logo de la empresa"></a></li>
-                <li class="header__item"><a href="nosotras.html">Nosotras</a></li>
-                <li class="header__item"><a href="preparacion.html">Preparacion</a></li>
-                <li class="header__item"><a href="tienda.html">Tienda</a></li>
-                <li class="header__item"><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <ul class="header__menu2">
-                <li class="header__item"><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="header__item"><a href="log-in.html"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="header__foto" src="../recursos/afrodita-candles.jpeg" alt="" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav header__menu">
+                        <li class="nav-item">
+                            <a class="active header__item " aria-current="page" href="nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active header__item" aria-current="page" href="preparacion.html">Preparacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__item" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__item" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex d-flex justify-content-end">
+                    <ul class="navbar-nav header__menu2">
+                        <li class="nav-item">
+                            <a class="header__item" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="header__item" href="log-in.html"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 <!-- Comienza main -->
@@ -61,17 +82,17 @@
         <section class="">
             <div class="maini__div">
                 <div class="maini__div1">
-                    <img class="maini__foto" src="../recursos/Tea party candle.jpeg" alt="foto de vela Tea party candle"></a></li>
+                    <img class="maini__foto rounded" src="../recursos/Tea party candle.jpeg" alt="foto de vela Tea party candle"></a></li>
                     <h2 class="maini__texto">Tea party candle</h2>
                     <h3 class="maini__textodos">$1.500,00</h3>
                 </div>
                 <div class="maini__div1">
-                    <img class="maini__foto" src="../recursos/Vela Nazar Eye.jpeg" alt="foto de vela Nazar eye candle"></a></li>
+                    <img class="maini__foto rounded" src="../recursos/Vela Nazar Eye.jpeg" alt="foto de vela Nazar eye candle"></a></li>
                     <h2 class="maini__texto">Nazar eye candle</h2>
                     <h3 class="maini__textodos">$1.100,00</h3>
                 </div>
                 <div class="maini__div1">
-                    <img class="maini__foto" src="../recursos/Vela secret message.jpeg" alt="foto de vela Secret massage candle"></a></li>
+                    <img class="maini__foto rounded" src="../recursos/Vela secret message.jpeg" alt="foto de vela Secret massage candle"></a></li>
                     <h2 class="maini__texto">Secret massage candle</h2>
                     <h3 class="maini__textodos">$900,00</h3>
                 </div>

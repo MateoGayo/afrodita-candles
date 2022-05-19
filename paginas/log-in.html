@@ -18,18 +18,39 @@
 <body>
 <!-- Comienza header -->
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__item"><a href="../index.html"><img class="header__foto" src="../recursos/afrodita-candles.jpeg" alt="logo de la empresa"></a></li>
-                <li class="header__item"><a href="nosotras.html">Nosotras</a></li>
-                <li class="header__item"><a href="preparacion.html">Preparacion</a></li>
-                <li class="header__item"><a href="tienda.html">Tienda</a></li>
-                <li class="header__item"><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <ul class="header__menu2">
-                <li class="header__item"><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="header__item"><a href="log-in.html"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="header__foto" src="../recursos/afrodita-candles.jpeg" alt="" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav header__menu">
+                        <li class="nav-item">
+                            <a class="active header__item " aria-current="page" href="nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active header__item" aria-current="page" href="preparacion.html">Preparacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__item" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__item" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex d-flex justify-content-end">
+                    <ul class="navbar-nav header__menu2">
+                        <li class="nav-item">
+                            <a class="header__item" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="header__item" href="log-in.html"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 <!-- Comienza main -->
@@ -39,25 +60,33 @@
                 <div>
                     <h1 class="sesion__titulo">iniciar sesion</h1>
                 </div>
-                <div>
-                    <input class="sesion__correo" placeholder="Dirección de correo electornico"></input>
-                </div>
-                <div>
-                    <input class="sesion__contraseña" type="password" placeholder="Contraseña"></input>
-                </div>
-                <div class="sesion__mantener">
-                    <div class="sesion__checkbox">
-                        <label><input type="checkbox" class="" >Mantener mi sesion iniciada</label>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"></label>
+                        <input class="sesion__correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Dirección de correo electronico">
+                    <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"></label>
+                        <input class="sesion__contraseña" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+                    <div class="mb-3 form-check sesion__mantener">
+                        <div class="sesion__checkbox">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Mantener la sesion iniciada</label>
+                        </div>
+                        <div>
+                        <a class="sesion__a" href="#">¿olvidaste tu contraseña?</a>
+                        </div>
                     </div>
                     <div>
-                        <a class="sesion__a" href="#">¿olvidaste tu contraseña?</a>
+                    <button type="submit" class="sesion__boton">Iniciar Sesion</button>
                     </div>
-                </div>
-                    <button class="sesion__boton" type="submit">iniciar sesion</button>
-                <div class="sesion__crear">
-                    <p class="sesion__texto1">¿no tienes una cuenta?</p>
-                    <a class="sesion__a1" href="#">crear cuenta</a>
-                </div>
+                    <div class="sesion__crear">
+                        <p class="sesion__texto1">¿no tienes una cuenta?</p>
+                        <a class="sesion__a1" href="#">crear cuenta</a>
+                    </div>
+                </form>
             </form>
         </section>
     </main>
