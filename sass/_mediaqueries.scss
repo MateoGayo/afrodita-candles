@@ -1,0 +1,157 @@
+/* tablet */
+
+@media (min-width: 541px) and (max-width: 720px){
+.header{
+    &__menu{
+        flex-direction: row-reverse;
+    }
+    &__foto{
+        width: 87px;
+        height: 87px;
+    }
+}
+/* comienza index */
+.maini{
+    &__carrusel{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 500px;
+    }
+    &__titlee{
+        font-size: 40px; 
+        font-weight: 700;
+    }
+    &__p{
+        font-size: 14px;
+        font-weight: 450; 
+    }
+    &__titulo{
+        margin-top: 35px;
+    }
+    &__foto{
+        width: 260px;
+        height: 260px;
+    }
+    &__texto{
+        font-size: larger;
+        font-weight: 570;
+    }
+    &__textodos{
+        font-size: medium;
+        font-weight: 525;
+    }
+}
+/* comienza nosotras */
+.mainn{
+    &__foto{
+        width: 350px;
+        height: 350px;
+    }
+    &__texto{
+        font-size: 14px;
+        font-weight: 450; 
+    }
+}
+/* comienza tienda */
+.main{
+    &__foto{
+        width: 260px;
+        height: 260px;
+    }
+    &__text{
+        font-size: larger;
+        font-weight: 570;
+    }
+    &__textdos{
+        font-size: medium;
+        font-weight: 525;
+    }
+    }
+}
+
+/* celular */
+
+@media (min-width: 320px) and (max-width: 540px){
+.header{
+    &__menu{
+        flex-direction: row-reverse;
+    }
+    &__foto{
+        width: 60px;
+        height: 60px;
+    }
+    &__item a{
+        font-size: 10px;
+    }
+}
+/* comienza index */
+.maini{
+    &__carrusel{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 400px;
+    }
+    &__titlee{
+        font-size: 35px; 
+        font-weight: 700;
+    }
+    &__p{
+        font-size: 12px;
+        font-weight: 450; 
+    }
+    &__titulo{
+        margin-top: 25px;
+    }
+    &__foto{
+        width: 200px;
+        height: 200px;
+    }
+    &__texto{
+        font-size: larger;
+        font-weight: 570;
+    }
+    &__textodos{
+        font-size: medium;
+        font-weight: 525;
+    }
+}
+/* comienza nosotras */
+.mainn{
+    &__foto{
+        width: 240px;
+        height: 240px;
+        text-align: center;
+    }
+    &__texto{
+        font-size: 14px;
+        font-weight: 450; 
+        text-align: center;
+    }
+    }
+/* comienza tienda */
+.main{
+    &__foto{
+        width: 260px;
+        height: 260px;
+    }
+    &__text{
+        font-size: larger;
+        font-weight: 570;
+    }
+    &__textdos{
+        font-size: medium;
+        font-weight: 525;
+    }
+}
+/* comienza carrito */
+.mainca{
+    &__section{
+        height: 500px;
+    }
+    &__titulo{
+        margin-top: 150px;
+    }
+}
+}

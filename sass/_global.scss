@@ -1,0 +1,21 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: $font-principal;
+    background-color: $color-principal;
+}
+
+a {
+    text-decoration: none;
+    &:hover{
+        font-weight:bold;
+        transition: .4s;
+    }
+    &:visited{
+        color: black;
+    }
+}
