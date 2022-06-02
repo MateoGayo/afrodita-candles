@@ -35,15 +35,13 @@
         margin-bottom: 20px;
     }
     &__div{
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 80px;
+        @extend .flexcenter;
     }
     &__div1{
-        display: flex;
-        justify-content: center;
         flex-direction: column;
+        @extend .flexcenter;
         &:hover{
             transform: scale(1.1);
             transition: .4s;
@@ -93,9 +91,8 @@
         font-weight: 500; 
     }
     &__section{
-        display: flex;
-        justify-content: center;
         flex-direction: column;
+        @extend .flexcenter;
     }
 }
 
@@ -128,9 +125,8 @@
 
 .main{
     width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    @extend .flexcenter;
     &__titulo{
         margin-left: 10px;
         margin-top: 20px;
@@ -173,9 +169,8 @@
 
 .contacto{
     &__titulo{
-        display: flex;
-        justify-content: center;
         margin-top: 20px;
+        @extend .flexcenter;
     }
     &__contenido{
         margin: auto;
@@ -185,22 +180,16 @@
         background-color: white;
     }
     &__correo{
-        margin: 10px;
-        margin-left: 17%;
         margin-top: 10%;
-        width: 250px;
+        @extend .size;
     }
     &__nombre{
-        margin: 10px;
-        margin-left: 17%;
-        width: 250px;
         margin-bottom: 10px;
+        @extend .size;
     }
     &__apellido{
-        margin: 10px;
-        margin-left: 17%;
         margin-top: 20px;
-        width: 250px;
+        @extend .size;
     }
     &__enviar{
         margin: 10px;
@@ -224,24 +213,6 @@
         margin-left: 90px;
         margin-top: 10px;
         font-size: xx-large;
-    }
-    &__contenido{
-        margin: auto;
-        width: 400px;
-        height: 400px;
-        border: 1.5px solid black;
-        background-color: white;
-    }
-    &__titulo{
-        margin-left: 90px;
-        margin-top: 10px;
-        font-size: xx-large;
-    }
-    &__correo{
-        margin: 10px;
-        margin-left: 13%;
-        margin-top: 8%;
-        width: 290px;
     }
     &__correo{
         margin: 10px;
@@ -297,5 +268,16 @@
         margin-top: 300px;
         font-size: xx-large;
     }
+}
+
+/*extend*/
+.size{
+    margin: 10px;
+    margin-left: 17%;
+    width: 250px;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
 }
 
