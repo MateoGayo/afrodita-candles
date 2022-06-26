@@ -44,6 +44,10 @@
 }
 /* comienza nosotras */
 .mainn{
+    &__div2{
+        display: flex;
+        justify-content: center;
+    }
     &__foto{
         width: 21.875rem;
         height: 21.875rem;
@@ -134,6 +138,10 @@
 }
 /* comienza nosotras */
 .mainn{
+    &__div2{
+        display: flex;
+        justify-content: center;
+    }
     &__foto{
         width: 15rem;
         height: 15rem;

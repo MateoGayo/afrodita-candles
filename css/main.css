@@ -328,6 +328,9 @@ a {
     font-size: medium;
     font-weight: 525; }
   /* comienza nosotras */
+  .mainn__div2 {
+    display: flex;
+    justify-content: center; }
   .mainn__foto {
     width: 21.875rem;
     height: 21.875rem; }
@@ -390,6 +393,9 @@ a {
     font-size: medium;
     font-weight: 525; }
   /* comienza nosotras */
+  .mainn__div2 {
+    display: flex;
+    justify-content: center; }
   .mainn__foto {
     width: 15rem;
     height: 15rem;
