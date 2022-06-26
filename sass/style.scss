@@ -308,6 +308,30 @@
     }
 }
 
+/* comienza error 404 */
+.error{
+    min-height: calc(100vh - 100px - 60px);
+    &__section{
+        margin-top: 20rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__boton{
+        margin-left: 35%;
+        text-decoration: none;
+        padding: 0.4rem;
+        font-weight: 500;
+        color: black;
+        background-color: white;
+        border-radius: 0.375rem;
+        border: 0.094rem solid black;
+    }
+    &__boton:hover{
+        color: white;
+        background-color: black;
+    }
+}
+
 /*extend*/
 .size{
     margin-left: 17%;
